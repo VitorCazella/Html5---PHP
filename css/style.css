@@ -7,7 +7,7 @@
     background: linear-gradient(to bottom right, #8c8c8c, #737373);
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -23,30 +23,29 @@ body {
     background: linear-gradient(to bottom, white, #a6a6a6);
 }
 
-/* Style the header */
 header {
     background-color: #ff3300;
-    background: linear-gradient(to bottom right, #ff3300, #ff471a);
-    padding: 30px;
-    text-align: center;
-    font-size: 35px;
+    background: linear-gradient(to bottom right, #ff3300, #ff704d);
+    text-align: left;
+    font-size: 30px;
     color: white;
 }
 
-/* Create two columns/boxes that floats next to each other */
 nav {
     float: right;
-    width: 30%;
-    height: auto; /* only for demonstration, should be removed */
-    background: #ccc;
-    padding: 20px;
-    text-align: center;
 }
 
-/* Style the list inside the menu */
 nav ul {
     list-style-type: none;
-    padding: 0;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+nav a{
+    background: #ccc;
+    padding: 20px;
+    text-align: right;
+
 }
 
 article {
@@ -54,17 +53,25 @@ article {
     padding: 20px;
     width: 70%;
     background-color: #f1f1f1;
-    height: auto; /* only for demonstration, should be removed */
+    height: auto;
+    width: 60%;
 }
 
-/* Clear floats after the columns */
 section:after {
     content: "";
     display: table;
     clear: both;
 }
 
-/* Style the footer */
+aside{
+    float: right;
+    padding: 20px;
+    width: 70%;
+    background-color: #FFFfff;
+    height: auto;
+    width: 40%;
+}
+
 footer {
     background-color: black;
     padding: 10px;
@@ -73,9 +80,11 @@ footer {
     font-size: 0.7em;
 }
 
-h2{
+header h2{
 	font-family: verdana;
     font-variant: small-caps;
+    text-align:left;
+    padding-left: 20px;
 }
 
 h1, p, li{
@@ -86,7 +95,10 @@ a {
 	cursor: pointer;
 }
 
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+li{
+    float: left;
+}
+
 @media (max-width: 600px) {
     nav, article {
         width: 100%;
