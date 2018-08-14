@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<header>
+	<title>Nome, Sexo e Escolaridade</title>
+	<meta charset="UTF-8"/>
+	<meta name="author" content="Vitor">
+<style type="text/css">
+	body{
+		background-color: lightgrey;
+	}
+
+	table, tr, td{
+		border: ridge white;
+		border-collapse: collapse;
+		border-width: 5px;
+		margin: 50px;
+	}
+
+	td {
+		padding: 20px;
+	}
+
+</style>
+</header>
+<body>
+	<table style="width:auto;">
+		<tr>
+			<td><i>Nome: </i></td>
+			<td><input type="text" name="name"></td>
+		</tr>
+		<tr>
+			<td><i>Sexo: </i></td>
+			<td><input type="radio" name="sexo" value="Feminino" checked>Feminino<input type="radio" name="sexo" value="Masculino">Masculino</td>
+		</tr>
+		<tr>
+			<td colspan="2""><i>Escolaridade</i><select name="escolaridade" style="margin-left: 30px;">
+				<option value="primeiro">1º Grau</option>
+				<option value="segundo">2º Grau</option>
+				<option value="superior">Superior</option>
+			</select></td>
+		</tr>
+</body>
+</html>

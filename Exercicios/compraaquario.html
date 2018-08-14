@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<header>
+	<title>Compra de Aquário</title>
+	<meta charset="UTF-8"/>
+	<meta name="author" content="Vitor">
+<style type="text/css">
+	body{
+		background-color: white;
+	}
+
+	fieldset{
+		width: 550px;
+		padding: 50px;
+	}
+
+	div{
+		text-align: center;
+	}
+
+	aside{
+		float: left;
+		width: 49%;
+		text-align: center;
+		border: 0.1px solid;
+	}
+
+
+	option{
+		padding: 4px;
+	}
+
+	button{
+		padding: 4px;
+	}
+
+</style>
+</header>
+<body>
+	<fieldset>
+		<legend>Compras</legend>
+		<aside>
+			<b>Produtos</b><br><br>
+			<div>
+				<select name="aquario">
+					<optgroup label="Aquários">
+					<option>Aquário 43L</option>
+					<option>Aquário 84L</option>
+					</optgroup>
+				</select>
+				<button>+</button>
+			</div><br><br><br><br><br>
+			<b>Complementos</b><br><br>
+			<div style="text-align: left; padding-left: 40px;">
+				<input type="radio" name="bandeira" value="movel" checked>Movel + Luminária<br>
+				<input type="radio" name="bandeira" value="luminaria">Luminária<br>
+				<input type="radio" name="bandeira" value="vidro">Só Vidro
+			</div>
+		</aside>
+		<aside style="height: 280px;">
+			<b>Lista de Compras</b><br><br>
+			<input type="text" name="lista" size="4">
+		</aside>
+		<footer style="padding-left: 40px;">
+			<input type="checkbox" name="presente">Entrega como Presente
+
+		</footer>
+	</fieldset>
+</body>
+</html>

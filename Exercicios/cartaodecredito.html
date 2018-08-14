@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<header>
+	<title>Cartão de Crédito</title>
+	<meta charset="UTF-8"/>
+	<meta name="author" content="Vitor">
+<style type="text/css">
+	body{
+		background-color: white;
+	}
+
+	table, tr, td{
+		border: ridge;
+		border-collapse: collapse;
+		border-width: 5px;
+		margin: 50px;
+	}
+
+	td {
+		padding: 20px;
+	}
+
+</style>
+</header>
+<body>
+	<table style="width:auto;">
+		<tr>
+			<td><i>Número: </i></td>
+			<td><input type="number" name="name"></td>
+		</tr>
+		<tr>
+			<td><i>Bandeira: </i></td>
+			<td>
+				<p><input type="radio" name="bandeira" value="visa" checked><img src="img/visa.png" height="50px" width="auto"></p>
+				<p><input type="radio" name="bandeira" value="master"><img src="img/master.png" height="50px" width="auto"></p>
+				<p><input type="radio" name="bandeira" value="american"><img src="img/american.png" height="50px" width="auto"></p>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2""><i>Validade</i><select name="escolaridade" style="margin-left: 30px;">
+				<option value="2012">2012</option>
+				<option value="2013">2013</option>
+				<option value="2014">2014</option>
+				<option value="2015">2015</option>
+				<option value="2016">2016</option>
+				<option value="2017">2017</option>
+			</select></td>
+		</tr>
+</body>
+</html>
