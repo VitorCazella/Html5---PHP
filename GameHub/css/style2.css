@@ -6,7 +6,11 @@ body{
 	background-color: gray;
 }
 
-#header1{
+#header1, #footer1{
 	background-color: #cccccc;
 	background: linear-gradient(to top, #000000, #1a1a1a);
+}
+
+.test{
+	border: red solid 1px;
 }
